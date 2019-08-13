@@ -1,0 +1,14 @@
+﻿@using login_reg.Models
+@model IndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Login or Register</h1>
+    <h1>Register</h1>
+    <partial name="RegPartial" model="Model"/>
+    <h1>Login</h1>
+    <partial name="LogPartial" model="Model"/>
+
+</div>

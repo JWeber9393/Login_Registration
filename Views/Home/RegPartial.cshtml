@@ -1,0 +1,26 @@
+@using login_reg.Models
+@model RegUser
+
+<form asp-action="register" asp-controller="Home" method="post">
+    <span asp-validation-for="fname"></span>
+    <label asp-for="fname"></label>
+    <input asp-for="fname">
+    
+    <span asp-validation-for="lname"></span>
+    <label asp-for="lname"></label>
+    <input asp-for="lname">
+
+    <span asp-validation-for="email"></span>
+    <label asp-for="email"></label>
+    <input asp-for="email">
+
+    <span asp-validation-for="password"></span>
+    <label asp-for="password"></label>
+    <input asp-for="password">
+    
+    <span asp-validation-for="conf_pw"></span>
+    <label asp-for="conf_pw"></label>
+    <input asp-for="conf_pw">
+
+    <input value="Add User" type="submit">
+</form>

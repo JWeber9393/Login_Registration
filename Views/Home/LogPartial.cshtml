@@ -1,0 +1,15 @@
+@using login_reg.Models
+@model LogUser
+<form asp-action="login" asp-controller="Home" method="post">
+
+    <span asp-validation-for="email"></span>
+    <label asp-for="email"></label>
+    <input asp-for="email">
+
+    <span asp-validation-for="password"></span>
+    <label asp-for="password"></label>
+    <input asp-for="password">
+    
+    <input value="Add User" type="submit">
+
+</form>
